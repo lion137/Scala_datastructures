@@ -1,3 +1,11 @@
+// simple tree implementation in scala,
+// more 
+
+sealed trait Tree[+A]
+case object EmptyTree extends Tree[Nothing]
+case class Node[A](value: A , left: Tree[A], right: Tree[A]) extends Tree[A]
+
+
 def treeMap[A, B](tree: Tree[A])(f: A => B): Tree[B] =
 		tree match {
 			case EmptyTree => EmptyTree
