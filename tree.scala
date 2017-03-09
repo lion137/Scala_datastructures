@@ -1,5 +1,5 @@
 // simple tree implementation in scala,
-// more 
+// more https://lion137.blogspot.co.uk/2017/03/scala-trees.html
 
 sealed trait Tree[+A]
 case object EmptyTree extends Tree[Nothing]
